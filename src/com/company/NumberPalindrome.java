@@ -1,7 +1,13 @@
 package com.company;
 
 public class NumberPalindrome {
-    public static boolean isPalindrome(int number) {
+    private int number;
+
+    public NumberPalindrome(int number) {
+        this.number = number;
+    }
+
+    public boolean isPalindrome(int number) {
         if (number < 0) {
             number *= -1;
         }

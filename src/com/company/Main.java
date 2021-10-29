@@ -10,7 +10,8 @@ public class Main {
         boolean hasNextInt = scanner.hasNextInt();
         if (hasNextInt) {
             int number = scanner.nextInt();
-            System.out.println("Is number the palindrome = " + NumberPalindrome.isPalindrome(number));
+            NumberPalindrome numberPalindrome = new NumberPalindrome(number);
+            System.out.println("Is number the palindrome = " + numberPalindrome.isPalindrome(number));
         } else {
             System.out.println("Invalid number");
         }
